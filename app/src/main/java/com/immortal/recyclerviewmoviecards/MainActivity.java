@@ -28,6 +28,12 @@ public class MainActivity extends AppCompatActivity implements ClickListener{
 
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(linearLayoutManager);
+        
+        // TODO - with 2 columns recyclerView ...
+        /*
+        RecyclerView.LayoutManager gridLayout = new GridLayoutManager(this,2);
+        recyclerView.setLayoutManager(gridLayout);
+        */
 
         //Custom Adapter with CardView ...
         ArrayList<Movie> movieList = prepareData();
